@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url><loc>https://honestmistakes.com/</loc></url>
+  <url>
+    <loc>https://honestmistakes.com/trailer/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://honestmistakes.com/assets/img/trailer_poster.jpg</video:thumbnail_loc>
+      <video:title>Unsound - Official Gameplay Trailer</video:title>
+      <video:description>Unsound is a first-person horror puzzle game. Explore a building that keeps returning you to seemingly the same place. Every time with a twist. Solve what each floor hides to descend. Uncover places that weren't ever on any floor plan, listening for anything that isn't you.</video:description>
+      <video:content_loc>https://honestmistakes.com/assets/video/trailer.mp4</video:content_loc>
+      <video:duration>57</video:duration>
+      <video:publication_date>2026-10-18</video:publication_date>
+    </video:video>
+  </url>
+</urlset>
