@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,29 +11,27 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header"><a class="brand" href="/"><img src="assets/img/honestmistakes_logo.png" width="242" height="18" alt="Honest Mistakes"></a></header>
+<div class="backdrop backdrop-graveyard" aria-hidden="true"></div>
+{% include header.html %}
 <main class="plain-page">
   <h1>Legal notice</h1>
   <p>Information pursuant to § 5 DDG</p>
 
   <h2>Provider</h2>
-  <p>
-    Babak Nouri<br>
-    c/o MDC#1743<br>
-    Welserstraße 3<br>
-    87463 Dietmannsried<br>
-    Germany
-  </p>
+  <address class="lines">
+    <span>Babak Nouri</span>
+    <span>c/o MDC#1743</span>
+    <span>Welserstraße 3</span>
+    <span>87463 Dietmannsried</span>
+    <span>Germany</span>
+  </address>
 
   <h2>Contact</h2>
   <p>
     Email: <a href="mailto:info@honestmistakes.com">info@honestmistakes.com</a>
   </p>
 </main>
-<footer class="site-footer">
-  <span>© 2026 Honest Mistakes</span>
-  <a href="legal.html">Legal notice</a>
-  <a href="privacy.html">Privacy</a>
-</footer>
+{% include footer.html %}
+<script src="/site.js"></script>
 </body>
 </html>

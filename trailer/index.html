@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,6 +14,9 @@
 <meta property="og:title" content="Unsound - Official Gameplay Trailer">
 <meta property="og:description" content="Unsound is a first-person horror puzzle game. Explore a building that keeps returning you to seemingly the same place. Every time with a twist. Solve what each floor hides to descend. Uncover places that weren't ever on any floor plan, listening for anything that isn't you.">
 <meta property="og:image" content="https://honestmistakes.com/assets/img/trailer_poster.jpg">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<meta property="og:image:alt" content="Unsound logo over a foggy village at night">
 <meta property="og:video" content="https://honestmistakes.com/assets/video/trailer.mp4">
 <meta property="og:video:type" content="video/mp4">
 <meta property="og:video:width" content="1920">
@@ -25,7 +30,7 @@
   "description": "Unsound is a first-person horror puzzle game. Explore a building that keeps returning you to seemingly the same place. Every time with a twist. Solve what each floor hides to descend. Uncover places that weren't ever on any floor plan, listening for anything that isn't you.",
   "thumbnailUrl": "https://honestmistakes.com/assets/img/trailer_poster.jpg",
   "contentUrl": "https://honestmistakes.com/assets/video/trailer.mp4",
-  "uploadDate": "2026-10-18",
+  "uploadDate": "2026-10-18T00:00:00+02:00",
   "duration": "PT57S",
   "width": 1920,
   "height": 1080,
@@ -45,18 +50,12 @@
 }
 </script>
 <link rel="icon" href="/favicon.png" type="image/png" sizes="48x48">
-<link rel="preload" href="/assets/fonts/SpecialElite-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/assets/fonts/SpecialElite-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="/"><img src="/assets/img/honestmistakes_logo.png" width="242" height="18" alt="Honest Mistakes"></a>
-  <nav>
-    <a href="/#unsound">Unsound</a>
-    <a href="/#press">Press</a>
-    <a href="/#studio">Studio</a>
-  </nav>
-</header>
+<div class="backdrop backdrop-graveyard" aria-hidden="true"></div>
+{% include header.html %}
 
 <main class="trailer-page">
   <video controls controlslist="nodownload" playsinline preload="metadata" poster="/assets/img/trailer_poster.jpg" width="1920" height="1080">
@@ -70,10 +69,7 @@
   </p>
 </main>
 
-<footer class="site-footer">
-  <span>© 2026 Honest Mistakes</span>
-  <a href="/legal.html">Legal notice</a>
-  <a href="/privacy.html">Privacy</a>
-</footer>
+{% include footer.html %}
+<script src="/site.js"></script>
 </body>
 </html>

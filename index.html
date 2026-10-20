@@ -1,17 +1,22 @@
+---
+---
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Unsound | Honest Mistakes</title>
+<title>Unsound | a horror game by Honest Mistakes</title>
 <link rel="canonical" href="https://honestmistakes.com/">
-<meta name="description" content="Honest Mistakes is an independent studio making Unsound, a first-person horror puzzle game set in a student dormitory. It releases on PC in November 2027.">
+<meta name="description" content="Honest Mistakes is an indie game studio of three people from Germany making Unsound, a first-person horror puzzle game set in a student dormitory. It releases on PC in November 2027.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Honest Mistakes">
 <meta property="og:url" content="https://honestmistakes.com/">
-<meta property="og:title" content="Unsound | Honest Mistakes">
+<meta property="og:title" content="Unsound | a horror game by Honest Mistakes">
 <meta property="og:description" content="Unsound is a first-person horror puzzle game set in a student dormitory that gets stranger with every floor. It releases on PC in November 2027.">
 <meta property="og:image" content="https://honestmistakes.com/assets/img/og_image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Unsound logo next to a cracked porcelain mannequin">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
 {
@@ -29,8 +34,10 @@
       "@type": "Organization",
       "@id": "https://honestmistakes.com/#studio",
       "name": "Honest Mistakes",
+      "description": "Indie game studio from Germany",
       "url": "https://honestmistakes.com/",
-      "email": "info@honestmistakes.com"
+      "email": "info@honestmistakes.com",
+      "sameAs": ["https://www.youtube.com/@HonestMistakes_GameStudio"]
     },
     {
       "@type": "VideoGame",
@@ -64,31 +71,27 @@
 }
 </script>
 <link rel="icon" href="favicon.png" type="image/png" sizes="48x48">
-<link rel="preload" href="assets/fonts/SpecialElite-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="assets/fonts/SpecialElite-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="backdrop" aria-hidden="true"></div>
 
-<header class="site-header">
-  <a class="brand" href="/"><img src="assets/img/honestmistakes_logo.png" width="242" height="18" alt="Honest Mistakes"></a>
-  <nav>
-    <a href="#unsound">Unsound</a>
-    <a href="#press">Press</a>
-    <a href="#studio">Studio</a>
-  </nav>
-</header>
+{% include header.html %}
 
 <main>
 
   <section id="unsound" class="hero">
-    <video class="hero-video" data-src="assets/video/hero.mp4" poster="assets/img/page_bg.jpg" muted loop playsinline aria-hidden="true"></video>
+    <video class="hero-video" data-src="assets/video/hero.mp4" data-src-av1="assets/video/hero.webm" poster="assets/img/page_bg.jpg" muted loop playsinline aria-hidden="true"></video>
     <button class="hero-toggle" type="button" hidden>Pause</button>
     <div class="hero-content">
-      <h1><img src="assets/img/logo.png" width="640" height="360" alt="Unsound"></h1>
-      <div class="actions">
-        <a class="button" href="https://store.steampowered.com/app/5249750/Unsound/?utm_source=honestmistakes&amp;utm_medium=website&amp;utm_content=hero">Wishlist on Steam</a>
-        <p class="release">Coming to PC<br>November 2027</p>
+      <h1><img src="assets/img/logo.png" srcset="assets/img/logo-640.png 640w, assets/img/logo.png 1280w" sizes="(max-width: 500px) 84vw, (max-width: 1312px) 420px, 32vw" width="640" height="360" alt="Unsound" fetchpriority="high"></h1>
+      <div class="hero-actions">
+        <div class="hero-buttons">
+          <a class="button" href="https://store.steampowered.com/app/5249750/Unsound/?utm_source=honestmistakes&amp;utm_medium=website&amp;utm_content=hero">Wishlist on Steam</a>
+          <a class="button button-quiet" href="trailer/">Watch trailer</a>
+        </div>
+        <p class="release">Coming to PC · November 2027</p>
       </div>
     </div>
   </section>
@@ -143,12 +146,12 @@
 
   <section class="gallery reveal" aria-labelledby="screenshots">
     <h2 id="screenshots" class="visually-hidden">Screenshots</h2>
-    <a href="assets/img/ss02.jpg"><img src="assets/img/thumbs/ss02.jpg" width="768" height="432" alt="A dim community room with a piano and a long table" loading="lazy"></a>
-    <a href="assets/img/ss03.jpg"><img src="assets/img/thumbs/ss03.jpg" width="768" height="432" alt="The community room from another angle" loading="lazy"></a>
-    <a href="assets/img/ss04.jpg"><img src="assets/img/thumbs/ss04.jpg" width="768" height="432" alt="A stalker behind a wooden pillar" loading="lazy"></a>
-    <a href="assets/img/ss07.jpg"><img src="assets/img/thumbs/ss07.jpg" width="768" height="432" alt="A dark room" loading="lazy"></a>
-    <a href="assets/img/ss08.jpg"><img src="assets/img/thumbs/ss08.jpg" width="768" height="432" alt="Corridor behind a window" loading="lazy"></a>
-    <a href="assets/img/ss09.jpg"><img src="assets/img/thumbs/ss09.jpg" width="768" height="432" alt="The graveyard at night, in fog" loading="lazy"></a>
+    <a href="assets/img/ss02.jpg"><img src="assets/img/thumbs/ss02.jpg" srcset="assets/img/thumbs/ss02-400.jpg 400w, assets/img/thumbs/ss02.jpg 768w" sizes="auto, (max-width: 800px) 50vw, 364px" width="768" height="432" alt="A dim community room with a piano and a long table" loading="lazy"></a>
+    <a href="assets/img/ss03.jpg"><img src="assets/img/thumbs/ss03.jpg" srcset="assets/img/thumbs/ss03-400.jpg 400w, assets/img/thumbs/ss03.jpg 768w" sizes="auto, (max-width: 800px) 50vw, 364px" width="768" height="432" alt="The community room from another angle" loading="lazy"></a>
+    <a href="assets/img/ss04.jpg"><img src="assets/img/thumbs/ss04.jpg" srcset="assets/img/thumbs/ss04-400.jpg 400w, assets/img/thumbs/ss04.jpg 768w" sizes="auto, (max-width: 800px) 50vw, 364px" width="768" height="432" alt="A stalker behind a wooden pillar" loading="lazy"></a>
+    <a href="assets/img/ss07.jpg"><img src="assets/img/thumbs/ss07.jpg" srcset="assets/img/thumbs/ss07-400.jpg 400w, assets/img/thumbs/ss07.jpg 768w" sizes="auto, (max-width: 800px) 50vw, 364px" width="768" height="432" alt="A dark room" loading="lazy"></a>
+    <a href="assets/img/ss08.jpg"><img src="assets/img/thumbs/ss08.jpg" srcset="assets/img/thumbs/ss08-400.jpg 400w, assets/img/thumbs/ss08.jpg 768w" sizes="auto, (max-width: 800px) 50vw, 364px" width="768" height="432" alt="Corridor behind a window" loading="lazy"></a>
+    <a href="assets/img/ss09.jpg"><img src="assets/img/thumbs/ss09.jpg" srcset="assets/img/thumbs/ss09-400.jpg 400w, assets/img/thumbs/ss09.jpg 768w" sizes="auto, (max-width: 800px) 50vw, 364px" width="768" height="432" alt="The graveyard at night, in fog" loading="lazy"></a>
   </section>
 
   <dialog class="lightbox" aria-label="Screenshot">
@@ -169,6 +172,7 @@
       <dt>Genre</dt><dd>First-person psychological horror, puzzle</dd>
       <dt>Players</dt><dd>Single-player</dd>
       <dt>Languages</dt><dd>English, German, French, Italian, Spanish (Spain, Latin America), Dutch, Polish, Swedish, Russian, Turkish, Japanese, Korean, Simplified Chinese</dd>
+      <dt>Streaming</dt><dd>Allowed and welcome, monetized too (<a href="faq/#streaming">details</a>)</dd>
       <dt>Steam</dt><dd><a href="https://store.steampowered.com/app/5249750/Unsound/?utm_source=honestmistakes&amp;utm_medium=website&amp;utm_content=press">store.steampowered.com/app/5249750</a></dd>
     </dl>
     <p><a href="presskit.zip">Press kit</a> (ZIP, 6 MB): fact sheet, logos, key art and ten screenshots. <a href="trailer/">Trailer</a> (1080p). For questions, contact us at <a href="mailto:info@honestmistakes.com">info@honestmistakes.com</a>.</p>
@@ -176,16 +180,15 @@
 
   <section id="studio" class="studio-about reveal">
     <h2>Honest Mistakes</h2>
-    <p>Write us: <a href="mailto:info@honestmistakes.com">info@honestmistakes.com</a></p>
+    <p class="lines">
+      <span>Write us: <a href="mailto:info@honestmistakes.com">info@honestmistakes.com</a></span>
+      <span>More about us: <a href="about/">About us</a></span>
+    </p>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <span>© 2026 Honest Mistakes</span>
-  <a href="legal.html">Legal notice</a>
-  <a href="privacy.html">Privacy</a>
-</footer>
+{% include footer.html %}
 
 <script src="site.js"></script>
 </body>

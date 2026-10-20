@@ -1,0 +1,53 @@
+- q: What is Unsound?
+  a: "Unsound is a first-person horror puzzle game. Explore a building that keeps returning you to seemingly the same place. Every time with a twist. Solve what each floor hides to descend. Uncover places that weren't ever on any floor plan, listening for anything that isn't you."
+
+- q: When does Unsound release?
+  a: We're aiming for November 2027. That date is a guide for our planning, not a fixed release date, and it may change.
+
+- q: Which platforms is Unsound coming to?
+  a: PC (Windows), on Steam.
+
+- q: Will there be a demo?
+  a: Yes, a demo is planned, but it isn't ready yet. There will be several versions of the demo over time, so you can follow how the game progresses.
+
+- q: Can I stream Unsound or make videos of it, and can I monetize them?
+  a: Yes, please do. There are no restrictions, and anything publicly available about the game can be shared. We try to make sure the game doesn't use any music that triggers Content ID claims. Your videos and streams are a huge help for us.
+  id: streaming
+  tag: For creators & press
+
+- q: Does Unsound have jumpscares?
+  a: As few as possible. Most of the horror in Unsound comes from the environment.
+
+- q: Is something hunting me?
+  a: Yes. In some places an entity chases you or searches for you.
+
+- q: Is there a story?
+  a: Yes. The story is told mostly through recordings and notes. If you read little or nothing, you will probably miss most of it.
+
+- q: How long is Unsound?
+  a: We're aiming for about 4 hours of playtime. That isn't a fixed number and may change during development.
+
+- q: Is Unsound single-player or multiplayer?
+  a: Unsound is single-player.
+
+- q: What are the system requirements?
+  a: We're targeting 60 fps on high/epic settings with an RTX 3070. Final system requirements are not set yet.
+
+- q: Which languages does Unsound support?
+  a: English, German, French, Italian, Spanish (Spain, Latin America), Dutch, Polish, Swedish, Russian, Turkish, Japanese, Korean and Simplified Chinese.
+
+- q: Does Unsound support controllers?
+  a: The demo will most likely ship without controller support. Whether we add it depends on how much players want it.
+
+- q: Does Unsound run on Steam Deck?
+  a: We don't know yet whether Unsound will run on Steam Deck with the plugin we use. If it does, it also depends on controller support, which we'll add if enough players want it.
+
+- q: Is Unsound coming to consoles, Mac or Linux?
+  a: Not at the moment. Unsound uses the UnrealSharp plugin, which can't build for consoles, Mac or Linux yet. The plugin is being ported, so Mac and Linux versions may follow later.
+
+- q: Which engine does Unsound use?
+  a: Unreal Engine 5.8.
+
+- q: How can I support Unsound?
+  a: Add Unsound to your Steam wishlist.
+  wishlist: true

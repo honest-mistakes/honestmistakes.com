@@ -1,0 +1,64 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unsound FAQ | Honest Mistakes</title>
+<link rel="canonical" href="https://honestmistakes.com/faq/">
+<meta name="description" content="Answers about Unsound: release date, platforms, demo, streaming, jumpscares, story, playtime, system requirements and languages.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Honest Mistakes">
+<meta property="og:url" content="https://honestmistakes.com/faq/">
+<meta property="og:title" content="Unsound FAQ | Honest Mistakes">
+<meta property="og:description" content="Answers about Unsound: release date, platforms, demo, streaming, jumpscares, story, playtime, system requirements and languages.">
+<meta property="og:image" content="https://honestmistakes.com/assets/img/og_image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Unsound logo next to a cracked porcelain mannequin">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "url": "https://honestmistakes.com/faq/",
+  "about": { "@type": "VideoGame", "name": "Unsound", "url": "https://honestmistakes.com/" },
+  "publisher": { "@id": "https://honestmistakes.com/#studio" },
+  "mainEntity": [
+    {%- for i in site.data.faq %}
+    {
+      "@type": "Question",
+      "name": {{ i.q | jsonify }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ i.a | jsonify }} }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>
+<link rel="icon" href="/favicon.png" type="image/png" sizes="48x48">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="backdrop backdrop-graveyard" aria-hidden="true"></div>
+{% include header.html %}
+<main class="plain-page faq">
+  <h1>Unsound FAQ</h1>
+  {%- for i in site.data.faq %}
+  <details{% if i.id %} id="{{ i.id }}"{% endif %}>
+    <summary>{% if i.tag %}<span class="faq-tag">{{ i.tag }}</span>{% endif %}<h2>{{ i.q }}</h2></summary>
+    <p>{{ i.a }}</p>
+    {%- if i.wishlist %}
+    <p class="actions"><a class="button" href="https://store.steampowered.com/app/5249750/Unsound/?utm_source=honestmistakes&amp;utm_medium=website&amp;utm_content=faq">Wishlist on Steam</a></p>
+    {%- endif %}
+  </details>
+  {%- endfor %}
+  <p class="faq-contact">More questions? Write us at <a href="mailto:info@honestmistakes.com">info@honestmistakes.com</a>.</p>
+</main>
+{% include footer.html %}
+<script>
+!function(){function e(){var t=location.hash&&document.getElementById(location.hash.slice(1));t&&"DETAILS"===t.tagName&&(t.open=!0)}e(),addEventListener("hashchange",e)}();
+</script>
+<script src="/site.js"></script>
+</body>
+</html>
