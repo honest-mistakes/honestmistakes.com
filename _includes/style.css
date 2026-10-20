@@ -1,18 +1,18 @@
 @font-face {
   font-family: "UI";
-  src: url("assets/fonts/Barlow-Regular.woff2") format("woff2"), url("assets/fonts/Barlow-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/Barlow-Regular.woff2") format("woff2"), url("/assets/fonts/Barlow-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "UI";
-  src: url("assets/fonts/Barlow-SemiBold.woff2") format("woff2"), url("assets/fonts/Barlow-SemiBold.ttf") format("truetype");
+  src: url("/assets/fonts/Barlow-SemiBold.woff2") format("woff2"), url("/assets/fonts/Barlow-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: "Special Elite";
-  src: url("assets/fonts/SpecialElite-Regular.woff2") format("woff2"), url("assets/fonts/SpecialElite-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/SpecialElite-Regular.woff2") format("woff2"), url("/assets/fonts/SpecialElite-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -38,7 +38,7 @@ body {
   position: fixed;
   inset: -8vh 0;
   z-index: -1;
-  background: url("assets/img/page_bg.jpg") center 30% / cover no-repeat;
+  background: url("/assets/img/page_bg_blur.webp") center 30% / cover no-repeat;
   will-change: transform;
 }
 .backdrop::after {
@@ -47,7 +47,7 @@ body {
   inset: 0;
   background: rgba(0, 0, 0, var(--dim-bg, 0));
 }
-.backdrop-graveyard { background-image: url("assets/img/page_bg_graveyard.jpg"); background-position: center 40%; }
+.backdrop-graveyard { background-image: url("/assets/img/page_bg_graveyard.webp"); background-position: center 40%; }
 .backdrop-graveyard::after { background: rgba(0, 0, 0, calc(.3 + var(--dim-bg, 0))); }
 
 a { color: var(--bright); }

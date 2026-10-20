@@ -51,14 +51,16 @@
 </script>
 <link rel="icon" href="/favicon.png" type="image/png" sizes="48x48">
 <link rel="preload" href="/assets/fonts/SpecialElite-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/style.css">
+<style>
+{% include style.css %}
+</style>
 </head>
 <body>
 <div class="backdrop backdrop-graveyard" aria-hidden="true"></div>
 {% include header.html %}
 
 <main class="trailer-page">
-  <video controls controlslist="nodownload" playsinline preload="metadata" poster="/assets/img/trailer_poster.jpg" width="1920" height="1080">
+  <video controls controlslist="nodownload" playsinline preload="metadata" poster="/assets/img/trailer_poster.webp" width="1920" height="1080">
     <source src="/assets/video/trailer.mp4" type="video/mp4">
   </video>
   <h1>Unsound - Official Gameplay Trailer</h1>

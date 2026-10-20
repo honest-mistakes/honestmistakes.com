@@ -71,8 +71,11 @@
 }
 </script>
 <link rel="icon" href="favicon.png" type="image/png" sizes="48x48">
+<link rel="preload" href="assets/img/page_bg.webp" as="image" type="image/webp" fetchpriority="high">
 <link rel="preload" href="assets/fonts/SpecialElite-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css">
+<style>
+{% include style.css %}
+</style>
 </head>
 <body>
 <div class="backdrop" aria-hidden="true"></div>
@@ -82,7 +85,7 @@
 <main>
 
   <section id="unsound" class="hero">
-    <video class="hero-video" data-src="assets/video/hero.mp4" data-src-av1="assets/video/hero.webm" poster="assets/img/page_bg.jpg" muted loop playsinline aria-hidden="true"></video>
+    <video class="hero-video" data-src="assets/video/hero.mp4" data-src-av1="assets/video/hero.webm" poster="assets/img/page_bg.webp" muted loop playsinline aria-hidden="true"></video>
     <button class="hero-toggle" type="button" hidden>Pause</button>
     <div class="hero-content">
       <h1><img src="assets/img/logo.png" srcset="assets/img/logo-640.png 640w, assets/img/logo.png 1280w" sizes="(max-width: 500px) 84vw, (max-width: 1312px) 420px, 32vw" width="640" height="360" alt="Unsound" fetchpriority="high"></h1>
@@ -102,7 +105,7 @@
 
   <div class="features">
     <article class="feature reveal">
-      <video class="clip" muted loop playsinline preload="none" poster="assets/video/clip1.jpg" aria-label="A dim community room with a chandelier and a piano">
+      <video class="clip" muted loop playsinline preload="none" poster="assets/video/clip1.webp" aria-label="A dim community room with a chandelier and a piano">
         <source src="assets/video/clip1.webm" type="video/webm">
         <source src="assets/video/clip1.mp4" type="video/mp4">
       </video>
@@ -113,7 +116,7 @@
     </article>
 
     <article class="feature reveal">
-      <video class="clip" muted loop playsinline preload="none" poster="assets/video/clip2.jpg" aria-label="An open fuse box on a basement wall">
+      <video class="clip" muted loop playsinline preload="none" poster="assets/video/clip2.webp" aria-label="An open fuse box on a basement wall">
         <source src="assets/video/clip2.webm" type="video/webm">
         <source src="assets/video/clip2.mp4" type="video/mp4">
       </video>
@@ -125,7 +128,7 @@
     </article>
 
     <article class="feature reveal">
-      <video class="clip" muted loop playsinline preload="none" poster="assets/video/clip3.jpg" aria-label="Writing on a wall under UV light">
+      <video class="clip" muted loop playsinline preload="none" poster="assets/video/clip3.webp" aria-label="Writing on a wall under UV light">
         <source src="assets/video/clip3.webm" type="video/webm">
         <source src="assets/video/clip3.mp4" type="video/mp4">
       </video>
