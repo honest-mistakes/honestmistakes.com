@@ -280,6 +280,21 @@ h2 { font-family: "Special Elite", "Courier New", monospace; color: var(--bright
 }
 .facts dd { margin: 0; }
 
+.press-page h3 { font-size: 16px; margin: 24px 0 6px; color: var(--bright); }
+.press-gallery { padding: 0; margin: 0 0 8px; }
+.press-assets {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  margin: 0 0 8px;
+}
+.press-assets figure { margin: 0; }
+.press-assets a { display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 10; background: #0b0b0b; border: 1px solid var(--line); padding: 10px; }
+.press-assets .on-light a { background: #e8e6e1; }
+.press-assets img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.press-assets figcaption { margin-top: 8px; font-size: 14px; }
+.press-assets figcaption span { color: var(--dim); }
+
 .site-footer {
   display: flex;
   flex-wrap: wrap;

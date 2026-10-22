@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-  <url><loc>https://honestmistakes.com/</loc><lastmod>2026-10-20</lastmod></url>
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://honestmistakes.com/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://honestmistakes.com/faq/</loc><lastmod>2026-10-20</lastmod></url>
-  <url><loc>https://honestmistakes.com/about/</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://honestmistakes.com/about/</loc><lastmod>2026-10-22</lastmod></url>
+  <url>
+    <loc>https://honestmistakes.com/press/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <image:image><image:loc>https://honestmistakes.com/assets/press/screenshots/unsound_01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://honestmistakes.com/assets/press/screenshots/unsound_02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://honestmistakes.com/assets/press/screenshots/unsound_03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://honestmistakes.com/assets/press/screenshots/unsound_04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://honestmistakes.com/assets/press/screenshots/unsound_05.jpg</image:loc></image:image>
+    <image:image><image:loc>https://honestmistakes.com/assets/press/screenshots/unsound_06.jpg</image:loc></image:image>
+    <image:image><image:loc>https://honestmistakes.com/assets/press/screenshots/unsound_07.jpg</image:loc></image:image>
+    <image:image><image:loc>https://honestmistakes.com/assets/press/screenshots/unsound_08.jpg</image:loc></image:image>
+    <image:image><image:loc>https://honestmistakes.com/assets/press/screenshots/unsound_09.jpg</image:loc></image:image>
+    <image:image><image:loc>https://honestmistakes.com/assets/press/screenshots/unsound_10.jpg</image:loc></image:image>
+    <image:image><image:loc>https://honestmistakes.com/assets/press/key_art/unsound_key_art_1232x706.jpg</image:loc></image:image>
+    <image:image><image:loc>https://honestmistakes.com/assets/press/key_art/unsound_key_art_nologo_1232x706.jpg</image:loc></image:image>
+    <image:image><image:loc>https://honestmistakes.com/assets/press/logo/unsound_logo.png</image:loc></image:image>
+  </url>
   <url>
     <loc>https://honestmistakes.com/trailer/</loc>
     <lastmod>2026-10-20</lastmod>

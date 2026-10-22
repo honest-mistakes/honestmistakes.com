@@ -1,0 +1,124 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unsound press kit | Honest Mistakes</title>
+<link rel="canonical" href="https://honestmistakes.com/press/">
+<meta name="description" content="Press kit for Unsound, a first-person psychological horror game by Honest Mistakes: fact sheet, description, trailer, screenshots, key art and logos. Releases on PC in November 2027.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Honest Mistakes">
+<meta property="og:url" content="https://honestmistakes.com/press/">
+<meta property="og:title" content="Unsound press kit | Honest Mistakes">
+<meta property="og:description" content="Fact sheet, description, trailer, screenshots, key art and logos for Unsound, a first-person psychological horror game. Releases on PC in November 2027.">
+<meta property="og:image" content="https://honestmistakes.com/assets/img/og_image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Unsound logo next to a cracked porcelain mannequin">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://honestmistakes.com/press/",
+  "name": "Unsound press kit",
+  "publisher": { "@id": "https://honestmistakes.com/#studio" },
+  "about": { "@type": "VideoGame", "name": "Unsound", "url": "https://honestmistakes.com/" },
+  "image": [
+    {% for screenshot in site.data.press.screenshots %}{
+      "@type": "ImageObject",
+      "contentUrl": "https://honestmistakes.com/assets/press/screenshots/{{ screenshot.file }}",
+      "description": {{ screenshot.alt | jsonify }},
+      "creditText": "Honest Mistakes",
+      "creator": { "@type": "Organization", "name": "Honest Mistakes" },
+      "copyrightNotice": "© 2026 Honest Mistakes",
+      "acquireLicensePage": "https://honestmistakes.com/press/"
+    }{% unless forloop.last %},
+    {% endunless %}{% endfor %}
+  ]
+}
+</script>
+<link rel="icon" href="/favicon.png" type="image/png" sizes="48x48">
+<style>
+{% include style.css %}
+</style>
+</head>
+<body>
+<div class="backdrop backdrop-graveyard" aria-hidden="true"></div>
+{% include header.html %}
+<main class="plain-page press-page">
+  <h1>Press kit</h1>
+  <p>All material on this page may be used for coverage of Unsound. Download everything at once as a <a href="/presskit.zip">ZIP (6 MB)</a>. For questions, write us at <a href="mailto:info@honestmistakes.com">info@honestmistakes.com</a>.</p>
+
+  <h2>Fact sheet</h2>
+  <dl class="facts">
+    <dt>Title</dt><dd>Unsound</dd>
+    <dt>Developer</dt><dd><a href="/about/">Honest Mistakes</a> (3 people, Germany)</dd>
+    <dt>Publisher</dt><dd>Honest Mistakes</dd>
+    <dt>Release</dt><dd>November 2027</dd>
+    <dt>Platform</dt><dd>PC (Windows), Steam</dd>
+    <dt>Genre</dt><dd>First-person psychological horror, puzzle</dd>
+    <dt>Players</dt><dd>Single-player</dd>
+    <dt>Engine</dt><dd>Unreal Engine 5</dd>
+    <dt>Languages</dt><dd>English, German, French, Italian, Spanish (Spain, Latin America), Dutch, Polish, Swedish, Russian, Turkish, Japanese, Korean, Simplified Chinese</dd>
+    <dt>Age rating</dt><dd>16 (Steam self-assessment, no USK rating yet)</dd>
+    <dt>Price</dt><dd>TBD</dd>
+    <dt>Streaming</dt><dd>Allowed and welcome, monetized too (<a href="/faq/#streaming">details</a>)</dd>
+    <dt>Steam</dt><dd><a href="https://store.steampowered.com/app/5249750/Unsound/?utm_source=honestmistakes&amp;utm_medium=website&amp;utm_content=presspage">store.steampowered.com/app/5249750</a></dd>
+  </dl>
+
+  <h2>Description</h2>
+  <p>Unsound is a first-person psychological horror game. Explore unsettling environments, solve puzzles, and uncover a dark mystery. Things are not always as they seem, and the deeper you go, the stranger things become. Pay attention to your surroundings and piece together the clues.</p>
+  <h3>Story</h3>
+  <p>You play as Clark Anderson, a university student living in room 305 who works part-time as a security guard for Liminal Legacy.</p>
+  <p>On your way to work, you realize that you're trapped on your own floor, with seemingly no way out. As you explore the building, familiar places become unrecognizable, and the world around you becomes increasingly strange.</p>
+  <p>Discover the building's history, and search for a way out.</p>
+  <h3>Environment</h3>
+  <p>You find yourself trapped in a dormitory, rebuilt after a catastrophe. The building seems to have a mind of its own and wants to keep you inside. The deeper you descend, the more it changes. Hallways grow dirtier and more distorted. Rooms turn into places that shouldn't exist as reality begins to fall apart. Each environment draws you further into the unknown, revealing another piece of the story.</p>
+  <h3>Puzzles</h3>
+  <p>Puzzles are central to the story of Unsound. To uncover the truth, you must pay attention to your surroundings, piece together clues, and make sense of what you discover. No markers, no quest log, no instructions. Everything you need is already there. You just have to notice it.</p>
+  <h3>Entities</h3>
+  <p>Something is out there. Or maybe it's all in your head. As reality begins to fall apart, it's hard to tell what's real and what's not. Keep your eyes open and question what you see. Whatever you do, don't get caught.</p>
+  <h3>Mature content</h3>
+  <p>This game contains realistic depictions of violence, which can be very disturbing. Some of its content may not be appropriate for all ages. Player discretion is advised.</p>
+
+  <h2>Trailer</h2>
+  <p><a href="/trailer/">Watch the trailer</a> or download the file: <a href="/assets/video/unsound_trailer_1080p60.mp4" download>unsound_trailer_1080p60.mp4</a> (1080p60, MP4, 73 MB).</p>
+
+  <h2 id="screenshots">Screenshots</h2>
+  <section class="gallery press-gallery" aria-labelledby="screenshots">
+    {% for screenshot in site.data.press.screenshots %}<a href="/assets/press/screenshots/{{ screenshot.file }}"><img src="/assets/press/thumbs/{{ screenshot.file }}" width="480" height="270" alt="{{ screenshot.alt }}" loading="lazy"></a>
+    {% endfor %}
+  </section>
+
+  <h2>Key art</h2>
+  <div class="press-assets">
+    {% for art in site.data.press.key_art %}<figure>
+      <a href="/assets/press/key_art/{{ art.file }}" download><img src="/assets/press/thumbs/{{ art.file }}" width="{{ art.thumb_width }}" height="{{ art.thumb_height }}" alt="{{ art.alt }}" loading="lazy"></a>
+      <figcaption>{{ art.label }}<br><span>{{ art.resolution }}, JPG</span></figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+
+  <h2>Logos</h2>
+  <div class="press-assets">
+    {% for logo in site.data.press.logos %}<figure{% if logo.on_light_background %} class="on-light"{% endif %}>
+      <a href="/assets/press/logo/{{ logo.file }}" download><img src="/assets/press/thumbs/{{ logo.thumb_file }}" width="{{ logo.thumb_width }}" height="{{ logo.thumb_height }}" alt="{{ logo.alt }}" loading="lazy"></a>
+      <figcaption>{{ logo.label }}<br><span>{{ logo.resolution }}, PNG</span></figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+
+  <dialog class="lightbox" aria-label="Screenshot">
+    <img src="/assets/press/thumbs/unsound_01.jpg" alt="" loading="lazy">
+    <button type="button" class="lightbox-prev" aria-label="Previous">‹</button>
+    <button type="button" class="lightbox-next" aria-label="Next">›</button>
+    <button type="button" class="lightbox-close" aria-label="Close">×</button>
+  </dialog>
+</main>
+{% include footer.html %}
+<script src="/site.js"></script>
+</body>
+</html>

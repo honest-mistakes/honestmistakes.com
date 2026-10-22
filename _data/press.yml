@@ -1,0 +1,84 @@
+screenshots:
+  - file: unsound_01.jpg
+    alt: Dormitory hallway with green damask wallpaper, a wall lamp and a closed door
+  - file: unsound_02.jpg
+    alt: Dim dormitory common room with a chandelier, a piano and a long table
+  - file: unsound_03.jpg
+    alt: The dormitory common room from another angle, with a sofa and bookshelves
+  - file: unsound_04.jpg
+    alt: A stalker standing in a dark room behind a wooden door frame
+  - file: unsound_05.jpg
+    alt: Basement corridor with storage shelves under a fluorescent lamp
+  - file: unsound_06.jpg
+    alt: Dorm room corner with damask wallpaper, a mirror, coats and a porcelain cat figurine
+  - file: unsound_07.jpg
+    alt: Dark dorm room with an unmade bed and a dresser
+  - file: unsound_08.jpg
+    alt: A dimly lit corridor seen through a window frame
+  - file: unsound_09.jpg
+    alt: The graveyard at night, in fog, with a bare tree
+  - file: unsound_10.jpg
+    alt: A foggy village at night with a few lit windows
+
+key_art:
+  - file: unsound_key_art_1232x706.jpg
+    label: Key art with logo
+    resolution: 1232×706
+    thumb_width: 480
+    thumb_height: 275
+    alt: Unsound key art, a cracked porcelain mannequin next to the Unsound logo
+  - file: unsound_key_art_nologo_1232x706.jpg
+    label: Key art without logo
+    resolution: 1232×706
+    thumb_width: 480
+    thumb_height: 275
+    alt: Unsound key art without logo, a cracked porcelain mannequin in a dark room
+  - file: unsound_key_art_vertical_748x896.jpg
+    label: Vertical key art with logo
+    resolution: 748×896
+    thumb_width: 401
+    thumb_height: 480
+    alt: Vertical Unsound key art, a cracked porcelain mannequin above the Unsound logo
+  - file: unsound_key_art_vertical_600x900.jpg
+    label: Vertical key art with logo
+    resolution: 600×900
+    thumb_width: 320
+    thumb_height: 480
+    alt: Narrow vertical Unsound key art, a cracked porcelain mannequin above the Unsound logo
+  - file: unsound_background_3840x1240.jpg
+    label: Background without logo
+    resolution: 3840×1240
+    thumb_width: 480
+    thumb_height: 155
+    alt: Wide background art of a foggy village at night
+
+logos:
+  - file: unsound_logo.png
+    thumb_file: unsound_logo.webp
+    label: Unsound logo, light, for dark backgrounds
+    resolution: 1280×720
+    thumb_width: 480
+    thumb_height: 270
+    alt: Unsound logo, light version
+  - file: unsound_logo_dark.png
+    thumb_file: unsound_logo_dark.webp
+    label: Unsound logo, dark, for light backgrounds
+    resolution: 1280×720
+    thumb_width: 480
+    thumb_height: 270
+    alt: Unsound logo, dark version
+    on_light_background: true
+  - file: unsound_icon_512.png
+    thumb_file: unsound_icon_512.jpg
+    label: Game icon
+    resolution: 512×512
+    thumb_width: 480
+    thumb_height: 480
+    alt: Unsound game icon
+  - file: honestmistakes_logo_white.png
+    thumb_file: honestmistakes_logo_white.webp
+    label: Honest Mistakes logo, white, for dark backgrounds
+    resolution: 1320×122
+    thumb_width: 480
+    thumb_height: 44
+    alt: Honest Mistakes studio logo
